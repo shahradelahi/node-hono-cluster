@@ -25,7 +25,7 @@ import type { Options, ServerType, ServeStaticOptions } from './typings';
  *   port: 3000,
  *   workers: true, // `true` to spawn as many workers as there are CPU cores.
  * }, (_server, info) => {
- *   console.log(`Listening on http://${info.host}:${info.port}`);
+ *   console.log(`Listening on http://${info.address}:${info.port}`);
  * });
  *
  * @param options Server configuration options.

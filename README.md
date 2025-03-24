@@ -36,7 +36,7 @@ serve({
   port: 3000,
   workers: true, // Use all available CPU cores
 }, (_server, info) => {
-  console.log(`Listening on http://${info.host}:${info.port}`);
+  console.log(`Listening on http://${info.address}:${info.port}`);
 });
 ```
 
