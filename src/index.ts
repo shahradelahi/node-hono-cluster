@@ -73,7 +73,7 @@ export function serve(
  *
  * const app = new Hono();
  *
- * app.use('/', serveStatic({ path: './public' }));
+ * app.use('*', serveStatic({ root: './public' }));
  *
  * @param options Static file serving options.
  * @returns Middleware handler.

@@ -52,7 +52,7 @@ import { serveStatic } from 'hono-cluster';
 
 const App = new Hono();
 
-App.use('/', serveStatic({ path: './public' }));
+App.use('*', serveStatic({ root: './public' }));
 
 // ...
 ```
