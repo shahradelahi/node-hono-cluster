@@ -1,6 +1,6 @@
 {
   "name": "hono-cluster",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Lightweight clustering and static file serving for Hono apps on NodeJs.",
   "keywords": [
     "hono",
