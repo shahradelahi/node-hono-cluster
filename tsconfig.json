@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@sindresorhus/tsconfig",
   "compilerOptions": {
-    "lib": [ "DOM", "DOM.Iterable", "es2022"],
+    "lib": ["DOM", "DOM.Iterable", "es2022"],
     "moduleResolution": "bundler",
     "module": "esnext",
 

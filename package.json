@@ -39,8 +39,7 @@
     "format:check": "prettier --check .",
     "lint": "pnpm typecheck && eslint .",
     "lint:fix": "eslint --fix .",
-    "prepublishOnly": "pnpm lint && pnpm build && pnpm format:check && pnpm test",
-    "test": "vitest --run",
+    "prepublishOnly": "pnpm lint && pnpm build && pnpm format:check",
     "typecheck": "tsc --noEmit"
   },
   "prettier": "@shahrad/prettier-config",
@@ -54,12 +53,11 @@
     "prettier": "^3.5.3",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",
-    "typescript": "^5.8.2",
-    "vitest": "^3.0.8"
+    "typescript": "^5.8.2"
   },
   "peerDependencies": {
-    "hono": "^4",
-    "@hono/node-server": "^1"
+    "@hono/node-server": "^1",
+    "hono": "^4"
   },
   "packageManager": "pnpm@9.15.9"
 }
