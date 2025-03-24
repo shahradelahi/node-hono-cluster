@@ -1,0 +1,65 @@
+{
+  "name": "hono-cluster",
+  "version": "0.0.0",
+  "description": "Lightweight clustering and static file serving for Hono apps on NodeJs.",
+  "keywords": [
+    "hono",
+    "cluster",
+    "static",
+    "file",
+    "serve",
+    "nodejs",
+    "node",
+    "typescript",
+    "ts",
+    "javascript",
+    "js"
+  ],
+  "homepage": "https://github.com/shahradelahi/node-hono-cluster",
+  "repository": "github:shahradelahi/node-hono-cluster",
+  "license": "MIT",
+  "author": "Shahrad Elahi <shahrad@litehex.com> (https://github.com/shahradelahi)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**",
+    "!**/*.d.cts"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "pnpm typecheck && eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepublishOnly": "pnpm lint && pnpm build && pnpm format:check && pnpm test",
+    "test": "vitest --run",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@shahrad/prettier-config",
+  "devDependencies": {
+    "@shahrad/eslint-config": "^1.0.0",
+    "@shahrad/prettier-config": "^1.2.2",
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  },
+  "peerDependencies": {
+    "hono": "^4",
+    "@hono/node-server": "^1"
+  },
+  "packageManager": "pnpm@9.15.9"
+}
