@@ -5,7 +5,7 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](/LICENSE)
 [![Install Size](https://packagephobia.com/badge?p=hono-cluster)](https://packagephobia.com/result?p=hono-cluster)
 
-__hono-cluster__ is a lightweight module for running [Hono](https://hono.dev/) applications with optional clustering support. It allows you to efficiently utilize multiple CPU cores by spawning worker processes.
+**hono-cluster** is a lightweight module for running [Hono](https://hono.dev/) applications with optional clustering support. It allows you to efficiently utilize multiple CPU cores by spawning worker processes.
 
 ---
 
@@ -29,22 +29,26 @@ npm install hono-cluster
 // -- server.ts
 
 import { serve } from 'hono-cluster';
+
 import { App } from './app';
 
-serve({
-  fetch: App.fetch,
-  port: 3000,
-  workers: true, // Use all available CPU cores
-}, (_server, info) => {
-  console.log(`Listening on http://${info.address}:${info.port}`);
-});
+serve(
+  {
+    fetch: App.fetch,
+    port: 3000,
+    workers: true, // Use all available CPU cores
+  },
+  (_server, info) => {
+    console.log(`Listening on http://${info.address}:${info.port}`);
+  }
+);
 ```
 
 #### Serving Static Files
 
 ```typescript
-import { serveStatic } from 'hono-cluster';
 import { Hono } from 'hono';
+import { serveStatic } from 'hono-cluster';
 
 const App = new Hono();
 
