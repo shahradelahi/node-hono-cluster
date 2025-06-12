@@ -1,20 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@sindresorhus/tsconfig",
+  "extends": "@shahrad/tsconfig",
   "compilerOptions": {
-    "lib": ["DOM", "DOM.Iterable", "es2022"],
-    "moduleResolution": "bundler",
-    "module": "esnext",
-
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "allowJs": true,
-
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+  "include": ["**/*.ts", "**/*.js"],
   "exclude": ["node_modules", "dist"]
 }

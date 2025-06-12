@@ -21,9 +21,9 @@ importers:
       '@shahrad/prettier-config':
         specifier: ^1.2.2
         version: 1.2.2(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.5.3))(prettier-plugin-packagejson@2.5.6(prettier@3.5.3))(prettier-plugin-sh@0.14.0(prettier@3.5.3))(prettier@3.5.3)
-      '@sindresorhus/tsconfig':
-        specifier: ^7.0.0
-        version: 7.0.0
+      '@shahrad/tsconfig':
+        specifier: ^1.1.0
+        version: 1.1.0
       '@types/node':
         specifier: ^22.13.10
         version: 22.13.10
@@ -452,8 +452,8 @@ packages:
       prettier-plugin-packagejson: ^2.5
       prettier-plugin-sh: ^0.15
 
-  '@sindresorhus/tsconfig@7.0.0':
-    resolution: {integrity: sha512-i5K04hLAP44Af16zmDjG07E1NHuDgCM07SJAT4gY0LZSRrWYzwt4qkLem6TIbIVh0k51RkN2bF+lP+lM5eC9fw==}
+  '@shahrad/tsconfig@1.1.0':
+    resolution: {integrity: sha512-WcziTJWK7DC49kbEKPwdZ/Mnhu3H6ZehpBg4UGbyDwU2Ze/QvSjZq1Nx6Vb2Pfgwjas1CHWkIA2d3GiW35fxsw==}
     engines: {node: '>=18'}
 
   '@types/estree@1.0.6':
@@ -899,6 +899,7 @@ packages:
 
   mvdan-sh@0.10.1:
     resolution: {integrity: sha512-kMbrH0EObaKmK3nVRKUIIya1dpASHIEusM13S4V1ViHFuxuNxCo+arxoa6j/dbV22YBGjl7UKJm9QQKJ2Crzhg==}
+    deprecated: See https://github.com/mvdan/sh/issues/1145
 
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
@@ -1530,7 +1531,7 @@ snapshots:
       prettier-plugin-packagejson: 2.5.6(prettier@3.5.3)
       prettier-plugin-sh: 0.14.0(prettier@3.5.3)
 
-  '@sindresorhus/tsconfig@7.0.0': {}
+  '@shahrad/tsconfig@1.1.0': {}
 
   '@types/estree@1.0.6': {}
 
