@@ -57,7 +57,7 @@
   },
   "peerDependencies": {
     "@hono/node-server": "^1",
-    "hono": "^4"
+    "hono": "^4.9.7"
   },
   "packageManager": "pnpm@9.15.9"
 }
