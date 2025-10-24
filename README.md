@@ -3,6 +3,7 @@
 [![CI](https://github.com/shahradelahi/node-hono-cluster/actions/workflows/ci.yml/badge.svg)](https://github.com/shahradelahi/node-hono-cluster/actions/workflows/ci.yml)
 [![NPM Version](https://img.shields.io/npm/v/hono-cluster.svg)](https://www.npmjs.com/package/hono-cluster)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](/LICENSE)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/hono-cluster)
 [![Install Size](https://packagephobia.com/badge?p=hono-cluster)](https://packagephobia.com/result?p=hono-cluster)
 
 **hono-cluster** is a lightweight module for running [Hono](https://hono.dev/) applications with optional clustering support. It allows you to efficiently utilize multiple CPU cores by spawning worker processes.
