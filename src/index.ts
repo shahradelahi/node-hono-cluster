@@ -49,11 +49,11 @@ export function serve(
     }
 
     for (let i = 0; i < Math.max(1, numWorkers ?? numCPUs); i++) {
-      cluster.fork();
+      cluster.fork(process.env);
     }
 
     cluster.on('exit', () => {
-      cluster.fork();
+      cluster.fork(process.env);
     });
   } else {
     const server = honoServe(opts, (info) => {
